@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Test: JavaScript Operators</title>
+    <link rel="stylesheet" href="../../../style/index.css">
+</head>
+<body data-category-id="operators" data-task-id="test-javascript-operators">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo"><span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span><span class="sidebar-logo-copy"><strong>CodeCraft</strong><span>WEB INTRO</span></span></div>
+            <ul id="operator-task-nav" class="sidebar-nav">
+                <li><a href="../operators.html" class="sidebar-category">Operators</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Test: JavaScript Operators</h1>
+            <section class="quiz-progress" aria-label="Quiz progress">
+                <div class="quiz-progress-header"><span>Progress</span><span id="quiz-progress-count">0 of 16 answered</span></div>
+                <div id="quiz-progress-bar" class="quiz-progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="16" aria-valuenow="0"><span id="quiz-progress-fill" class="quiz-progress-fill"></span></div>
+            </section>
+            <form id="quiz-form" class="quiz-question">
+                <p id="quiz-question-number" class="quiz-question-number"></p>
+                <h2 id="quiz-question-prompt"></h2>
+                <pre class="quiz-code"><code id="quiz-question-code"></code></pre>
+                <fieldset class="quiz-answer-options"><legend>Choose an answer</legend><div id="quiz-answer-choices"></div></fieldset>
+                <button id="quiz-submit" class="quiz-submit" type="submit">Submit answer</button>
+                <p id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </main>
+        <script src="../../../script/progress.js"></script>
+        <script src="../../../script/operators.js"></script>
+    </div>
+    <script>document.addEventListener('DOMContentLoaded', function () { jscInitOperatorQuiz(); });</script>
+</body>
+</html>

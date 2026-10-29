@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Strings</title>
+    <link rel="stylesheet" href="../../style/index.css">
+</head>
+<body>
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+            <span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span class="sidebar-logo-copy">
+                <strong>CodeCraft</strong>
+                <span>WEB INTRO</span>
+            </span>
+        </div>
+            <ul class="sidebar-nav">
+                <li><a href="../../index.html">Home</a></li>
+                <li class="sidebar-group is-expanded">
+                    <a href="../js-basics.html" class="sidebar-group-toggle" aria-expanded="true" onclick="jscToggleSidebarGroup(this, event)">JS Basics</a>
+                    <ul class="sidebar-subnav">
+                    <li><a href="variables.html" onclick="jscGuardSamePageLink(this, event)"><span>Variables</span><span class="sidebar-count" data-category="variables" data-category-total="14">0/14</span></a></li>
+                    <li><a href="booleans.html" onclick="jscGuardSamePageLink(this, event)"><span>Booleans</span><span class="sidebar-count" data-category="booleans" data-category-total="8">0/8</span></a></li>
+                    <li><a href="operators.html" onclick="jscGuardSamePageLink(this, event)"><span>Operators</span><span class="sidebar-count" data-category="operators" data-category-total="18">0/18</span></a></li>
+                    <li><a href="strings.html" class="active" onclick="jscGuardSamePageLink(this, event)"><span>Strings</span><span class="sidebar-count" data-category="strings" data-category-total="27">0/27</span></a></li>
+                    <li><a href="conditionals.html" onclick="jscGuardSamePageLink(this, event)"><span>Conditionals</span><span class="sidebar-count" data-category="conditionals" data-category-total="0">0/0</span></a></li>
+                    <li><a href="functions-i.html" onclick="jscGuardSamePageLink(this, event)"><span>Functions I</span><span class="sidebar-count" data-category="functions-i" data-category-total="0">0/0</span></a></li>
+                    <li><a href="arrays.html" onclick="jscGuardSamePageLink(this, event)"><span>Arrays</span><span class="sidebar-count" data-category="arrays" data-category-total="0">0/0</span></a></li>
+                    <li><a href="objects.html" onclick="jscGuardSamePageLink(this, event)"><span>Objects</span><span class="sidebar-count" data-category="objects" data-category-total="0">0/0</span></a></li>
+                    <li><a href="loops.html" onclick="jscGuardSamePageLink(this, event)"><span>Loops</span><span class="sidebar-count" data-category="loops" data-category-total="0">0/0</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="../js-intermediate.html">JS Intermediate</a></li>
+                <li><a href="../js-dom.html">JS DOM</a></li>
+                <li><a href="../js-practice.html">JS Practice</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="content-heading">
+                <h1>Strings</h1>
+                <span class="category-count" data-category="strings" data-category-total="27">0/27</span>
+            </div>
+            <div class="task-list">
+                <a class="task-item" href="strings/lesson.html" data-task-id="strings-introduction"><div class="task-circle task-circle--lesson" title="Lesson">L</div><div class="task-info"><h3>Introduction to Strings</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=create-a-javascript-string" data-task-id="create-a-javascript-string"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Create a Javascript string</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=declare-a-string-variable" data-task-id="declare-a-string-variable"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Declare a String Variable</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=compare-strings-with-different-quotes" data-task-id="compare-strings-with-different-quotes"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Compare Strings with Different Quotes</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=different-ways-to-create-javascript-strings" data-task-id="different-ways-to-create-javascript-strings"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Different ways to create Javascript strings</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=connect-javascript-strings-1" data-task-id="connect-javascript-strings-1"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Connect Javascript strings (1)</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=find-the-length-of-a-string" data-task-id="find-the-length-of-a-string"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Find the Length of a String</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=repeat-a-word-twice" data-task-id="repeat-a-word-twice"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Repeat a Word Twice</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=is-the-string-longer-than-5" data-task-id="is-the-string-longer-than-5"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Is the String Longer Than 5?</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=form-a-simple-sentence" data-task-id="form-a-simple-sentence"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Form a Simple Sentence</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=store-the-first-character" data-task-id="store-the-first-character"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Store the First Character</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=store-the-last-character" data-task-id="store-the-last-character"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Store the Last Character</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=are-the-first-and-last-characters-the-same" data-task-id="are-the-first-and-last-characters-the-same"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Are the First and Last Characters the Same?</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=get-the-character-at-a-given-index" data-task-id="get-the-character-at-a-given-index"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Get the Character at a Given Index</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=case-sensitivity-in-string-comparisons" data-task-id="case-sensitivity-in-string-comparisons"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Case Sensitivity in String Comparisons</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=connect-javascript-strings-2" data-task-id="connect-javascript-strings-2"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Connect Javascript strings (2)</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=connect-javascript-strings-3" data-task-id="connect-javascript-strings-3"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Connect Javascript strings (3)</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=create-a-greeting-with-template-literals" data-task-id="create-a-greeting-with-template-literals"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Create a Greeting with Template Literals</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=display-a-users-age-with-template-literals" data-task-id="display-a-users-age-with-template-literals"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Display a User's Age with Template Literals</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=simple-math-in-a-template-literal" data-task-id="simple-math-in-a-template-literal"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Simple Math in a Template Literal</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=convert-to-uppercase" data-task-id="convert-to-uppercase"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Convert to Uppercase</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=convert-to-lowercase" data-task-id="convert-to-lowercase"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Convert to Lowercase</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=uppercase-and-lowercase-mixed" data-task-id="uppercase-and-lowercase-mixed"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Uppercase and Lowercase Mixed</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=case-insensitive-string-comparison" data-task-id="case-insensitive-string-comparison"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Case-insensitive String Comparison</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=validate-email" data-task-id="validate-email"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Validate Email</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/challenge.html?task=case-sensitive-includes" data-task-id="case-sensitive-includes"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Case Sensitive Includes</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="strings/test-javascript-strings.html" data-task-id="test-javascript-strings"><div class="task-circle task-circle--exam" title="Exam">E</div><div class="task-info"><h3>Test: JavaScript strings</h3></div><span class="task-check">&check;</span></a>
+            </div>
+        </main>
+    </div>
+    <script src="../../script/progress.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            jscRenderTaskCheckmarks('strings');
+            jscRenderCategoryCounts();
+        });
+    </script>
+    <script src="../../script/nav.js"></script>
+</body>
+</html>

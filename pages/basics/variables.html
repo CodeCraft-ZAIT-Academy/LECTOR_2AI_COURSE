@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Variables</title>
+    <link rel="stylesheet" href="../../style/index.css">
+</head>
+<body>
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+            <span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span class="sidebar-logo-copy">
+                <strong>CodeCraft</strong>
+                <span>WEB INTRO</span>
+            </span>
+        </div>
+            <ul class="sidebar-nav">
+                <li><a href="../../index.html">Home</a></li>
+                <li class="sidebar-group is-expanded">
+                    <a href="../js-basics.html" class="sidebar-group-toggle" aria-expanded="true" onclick="jscToggleSidebarGroup(this, event)">JS Basics</a>
+                    <ul class="sidebar-subnav">
+                    <li><a href="variables.html" class="active" onclick="jscGuardSamePageLink(this, event)"><span>Variables</span><span class="sidebar-count" data-category="variables" data-category-total="14">0/14</span></a></li>
+                    <li><a href="booleans.html" onclick="jscGuardSamePageLink(this, event)"><span>Booleans</span><span class="sidebar-count" data-category="booleans" data-category-total="8">0/8</span></a></li>
+                    <li><a href="operators.html" onclick="jscGuardSamePageLink(this, event)"><span>Operators</span><span class="sidebar-count" data-category="operators" data-category-total="18">0/18</span></a></li>
+                    <li><a href="strings.html" onclick="jscGuardSamePageLink(this, event)"><span>Strings</span><span class="sidebar-count" data-category="strings" data-category-total="27">0/27</span></a></li>
+                    <li><a href="conditionals.html" onclick="jscGuardSamePageLink(this, event)"><span>Conditionals</span><span class="sidebar-count" data-category="conditionals" data-category-total="0">0/0</span></a></li>
+                    <li><a href="functions-i.html" onclick="jscGuardSamePageLink(this, event)"><span>Functions I</span><span class="sidebar-count" data-category="functions-i" data-category-total="0">0/0</span></a></li>
+                    <li><a href="arrays.html" onclick="jscGuardSamePageLink(this, event)"><span>Arrays</span><span class="sidebar-count" data-category="arrays" data-category-total="0">0/0</span></a></li>
+                    <li><a href="objects.html" onclick="jscGuardSamePageLink(this, event)"><span>Objects</span><span class="sidebar-count" data-category="objects" data-category-total="0">0/0</span></a></li>
+                    <li><a href="loops.html" onclick="jscGuardSamePageLink(this, event)"><span>Loops</span><span class="sidebar-count" data-category="loops" data-category-total="0">0/0</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="../js-intermediate.html">JS Intermediate</a></li>
+                <li><a href="../js-dom.html">JS DOM</a></li>
+                <li><a href="../js-practice.html">JS Practice</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="content-heading">
+                <h1>Variables</h1>
+                <span class="category-count" data-category="variables" data-category-total="14">0/14</span>
+            </div>
+            <div class="task-list">
+                <a class="task-item" href="variables/lesson.html" data-task-id="variables-introduction">
+                    <div class="task-circle task-circle--lesson" title="Lesson">L</div>
+                    <div class="task-info"><h3>Introduction to Variables</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/hello-world.html" data-task-id="hello-world">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Hello world</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/reassign-value-to-a-variable-1.html" data-task-id="reassign-value-to-a-variable-1">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Reassign a value to a variable I</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/assign-value-to-a-variable.html" data-task-id="assign-value-to-a-variable">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Assign a value to a variable</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/assign-value-of-another-variable.html" data-task-id="assign-value-of-another-variable">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Assign the value of another variable</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/create-a-variable.html" data-task-id="create-a-variable">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Create a missing variable</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/accessing-a-variable-1.html" data-task-id="accessing-a-variable-1">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Accessing a variable I</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/accessing-a-variable-2.html" data-task-id="accessing-a-variable-2">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Accessing a variable II</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/declare-variable-and-assign-a-number.html" data-task-id="declare-variable-and-assign-a-number">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Declare a variable and assign a number</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/reassign-value-to-a-variable-2.html" data-task-id="reassign-value-to-a-variable-2">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Reassign a value to a variable II</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/uncomment-to-assign-a-number.html" data-task-id="uncomment-to-assign-a-number">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Uncomment to Assign a Number</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/time-to-uncomment.html" data-task-id="time-to-uncomment">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Time to Uncomment</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/time-to-comment.html" data-task-id="time-to-comment">
+                    <div class="task-circle task-circle--challenge" title="Challenge">C</div>
+                    <div class="task-info"><h3>Time to comment</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+                <a class="task-item" href="variables/test-javascript-variables.html" data-task-id="test-javascript-variables">
+                    <div class="task-circle task-circle--exam" title="Exam">E</div>
+                    <div class="task-info"><h3>Test: JavaScript variables</h3></div>
+                    <span class="task-check">&check;</span>
+                </a>
+            </div>
+        </main>
+    </div>
+    <script src="../../script/progress.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            jscRenderTaskCheckmarks('variables');
+            jscRenderCategoryCounts();
+        });
+    </script>
+    <script src="../../script/nav.js"></script>
+</body>
+</html>

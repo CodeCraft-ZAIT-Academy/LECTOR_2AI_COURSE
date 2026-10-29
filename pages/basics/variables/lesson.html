@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Introduction to Variables</title>
+    <link rel="stylesheet" href="../../../style/index.css">
+</head>
+<body data-category-id="variables" data-task-id="variables-introduction">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo"><span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span><span class="sidebar-logo-copy"><strong>CodeCraft</strong><span>WEB INTRO</span></span></div>
+            <ul class="sidebar-nav">
+                <li><a href="../variables.html" class="sidebar-category">Variables</a></li>
+                <li><a href="lesson.html" class="sidebar-task sidebar-task--lesson active" data-task-id="variables-introduction"><span class="sidebar-task-icon">L</span><span class="sidebar-task-label">Introduction to Variables</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="hello-world.html" class="sidebar-task sidebar-task--challenge" data-task-id="hello-world"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Hello world</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="reassign-value-to-a-variable-1.html" class="sidebar-task sidebar-task--challenge" data-task-id="reassign-value-to-a-variable-1"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Reassign a value to a variable I</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="assign-value-to-a-variable.html" class="sidebar-task sidebar-task--challenge" data-task-id="assign-value-to-a-variable"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Assign a value to a variable</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="assign-value-of-another-variable.html" class="sidebar-task sidebar-task--challenge" data-task-id="assign-value-of-another-variable"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Assign the value of another variable</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="create-a-variable.html" class="sidebar-task sidebar-task--challenge" data-task-id="create-a-variable"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Create a missing variable</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="accessing-a-variable-1.html" class="sidebar-task sidebar-task--challenge" data-task-id="accessing-a-variable-1"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Accessing a variable I</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="accessing-a-variable-2.html" class="sidebar-task sidebar-task--challenge" data-task-id="accessing-a-variable-2"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Accessing a variable II</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="declare-variable-and-assign-a-number.html" class="sidebar-task sidebar-task--challenge" data-task-id="declare-variable-and-assign-a-number"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Declare a variable and assign a number</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="reassign-value-to-a-variable-2.html" class="sidebar-task sidebar-task--challenge" data-task-id="reassign-value-to-a-variable-2"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Reassign a value to a variable II</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="uncomment-to-assign-a-number.html" class="sidebar-task sidebar-task--challenge" data-task-id="uncomment-to-assign-a-number"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Uncomment to Assign a Number</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="time-to-uncomment.html" class="sidebar-task sidebar-task--challenge" data-task-id="time-to-uncomment"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Time to Uncomment</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="time-to-comment.html" class="sidebar-task sidebar-task--challenge" data-task-id="time-to-comment"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Time to comment</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="test-javascript-variables.html" class="sidebar-task sidebar-task--exam" data-task-id="test-javascript-variables"><span class="sidebar-task-icon">E</span><span class="sidebar-task-label">Test: JavaScript variables</span><span class="sidebar-task-check">&check;</span></a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Introduction to Variables</h1>
+            <p>Variables give names to values so a program can read and update information. In this category, you will practice declaring variables, assigning values, and using those values in JavaScript.</p>
+            <h2>Declare and use values</h2>
+            <pre class="quiz-code"><code>let score = 5;
+score = 8;
+const learner = 'Ada';
+console.log(score);
+console.log(learner);</code></pre>
+            <p>Use <code>let</code> when a variable needs to be reassigned. Use <code>const</code> when its binding should stay the same. <code>console.log()</code> prints a value so you can inspect it.</p>
+            <h2>Comments and output</h2>
+            <pre class="quiz-code"><code>// This line is a comment
+console.log('Ready to practice');</code></pre>
+            <button id="complete-lesson" class="run-button" type="button">Mark lesson complete</button>
+            <p id="lesson-status" class="quiz-feedback" role="status" aria-live="polite"></p>
+        </main>
+    </div>
+    <script src="../../../script/progress.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.getElementById('complete-lesson');
+            const status = document.getElementById('lesson-status');
+            const taskId = 'variables-introduction';
+
+            jscRenderTaskCheckmarks('variables');
+            if (jscIsCompleted('variables', taskId)) {
+                button.textContent = 'Lesson completed';
+                button.disabled = true;
+            }
+
+            button.addEventListener('click', function () {
+                jscMarkCompleted('variables', taskId);
+                jscRenderTaskCheckmarks('variables');
+                button.textContent = 'Lesson completed';
+                button.disabled = true;
+                status.textContent = 'Lesson marked complete.';
+                status.className = 'quiz-feedback quiz-feedback--success';
+            });
+        });
+    </script>
+</body>
+</html>

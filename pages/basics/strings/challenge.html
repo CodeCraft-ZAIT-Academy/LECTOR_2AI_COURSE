@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Strings</title>
+    <link rel="stylesheet" href="../../../style/index.css">
+</head>
+<body data-category-id="strings">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo"><span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span><span class="sidebar-logo-copy"><strong>CodeCraft</strong><span>WEB INTRO</span></span></div>
+            <ul id="string-task-nav" class="sidebar-nav"><li><a href="../strings.html" class="sidebar-category">Strings</a></li></ul>
+        </nav>
+        <main class="content">
+            <h1 id="task-title">Strings</h1>
+            <div class="challenge-layout">
+                <div class="editor-section">
+                    <div class="editor-wrapper">
+                        <textarea id="code-editor" class="code-editor" spellcheck="false" placeholder="// Write your JavaScript code here"></textarea>
+                        <div class="editor-actions"><button type="button" class="reset-button" onclick="resetCode()">Reset</button><button class="run-button" onclick="runCode()">Run Code</button></div>
+                    </div>
+                    <div class="console-panel"><div class="console-header">Console</div><pre id="console-output" class="console-output"></pre></div>
+                    <div id="result-status" class="result-status"></div>
+                </div>
+                <aside class="instructions-section"><h2>Instructions</h2><p id="task-instructions"></p></aside>
+            </div>
+        </main>
+        <script src="../../../script/progress.js"></script>
+        <script src="../../../script/challenge.js"></script>
+        <script src="../../../script/strings.js"></script>
+    </div>
+    <script>document.addEventListener('DOMContentLoaded', function () { jscInitStringChallenge(); });</script>
+</body>
+</html>

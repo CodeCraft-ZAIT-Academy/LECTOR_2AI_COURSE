@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Booleans</title>
+    <link rel="stylesheet" href="../../style/index.css">
+</head>
+<body>
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+            <span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span class="sidebar-logo-copy">
+                <strong>CodeCraft</strong>
+                <span>WEB INTRO</span>
+            </span>
+        </div>
+            <ul class="sidebar-nav">
+                <li><a href="../../index.html">Home</a></li>
+                <li class="sidebar-group is-expanded">
+                    <a href="../js-basics.html" class="sidebar-group-toggle" aria-expanded="true" onclick="jscToggleSidebarGroup(this, event)">JS Basics</a>
+                    <ul class="sidebar-subnav">
+                    <li><a href="variables.html" onclick="jscGuardSamePageLink(this, event)"><span>Variables</span><span class="sidebar-count" data-category="variables" data-category-total="14">0/14</span></a></li>
+                    <li><a href="booleans.html" class="active" onclick="jscGuardSamePageLink(this, event)"><span>Booleans</span><span class="sidebar-count" data-category="booleans" data-category-total="8">0/8</span></a></li>
+                    <li><a href="operators.html" onclick="jscGuardSamePageLink(this, event)"><span>Operators</span><span class="sidebar-count" data-category="operators" data-category-total="18">0/18</span></a></li>
+                    <li><a href="strings.html" onclick="jscGuardSamePageLink(this, event)"><span>Strings</span><span class="sidebar-count" data-category="strings" data-category-total="27">0/27</span></a></li>
+                    <li><a href="conditionals.html" onclick="jscGuardSamePageLink(this, event)"><span>Conditionals</span><span class="sidebar-count" data-category="conditionals" data-category-total="0">0/0</span></a></li>
+                    <li><a href="functions-i.html" onclick="jscGuardSamePageLink(this, event)"><span>Functions I</span><span class="sidebar-count" data-category="functions-i" data-category-total="0">0/0</span></a></li>
+                    <li><a href="arrays.html" onclick="jscGuardSamePageLink(this, event)"><span>Arrays</span><span class="sidebar-count" data-category="arrays" data-category-total="0">0/0</span></a></li>
+                    <li><a href="objects.html" onclick="jscGuardSamePageLink(this, event)"><span>Objects</span><span class="sidebar-count" data-category="objects" data-category-total="0">0/0</span></a></li>
+                    <li><a href="loops.html" onclick="jscGuardSamePageLink(this, event)"><span>Loops</span><span class="sidebar-count" data-category="loops" data-category-total="0">0/0</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="../js-intermediate.html">JS Intermediate</a></li>
+                <li><a href="../js-dom.html">JS DOM</a></li>
+                <li><a href="../js-practice.html">JS Practice</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div class="content-heading">
+                <h1>Booleans</h1>
+                <span class="category-count" data-category="booleans" data-category-total="8">0/8</span>
+            </div>
+            <div class="task-list">
+                <a class="task-item" href="booleans/lesson.html" data-task-id="booleans-introduction"><div class="task-circle task-circle--lesson" title="Lesson">L</div><div class="task-info"><h3>Introduction to Booleans</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="booleans/assign-a-boolean-to-a-variable.html" data-task-id="assign-a-boolean-to-a-variable"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Assign a Boolean to a Variable</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="booleans/convert-number-to-boolean.html" data-task-id="convert-number-to-boolean"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Convert Number to Boolean</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="booleans/boolean-of-an-empty-string.html" data-task-id="boolean-of-an-empty-string"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Boolean of an Empty String</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="booleans/convert-a-string-to-a-boolean.html" data-task-id="convert-a-string-to-a-boolean"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Convert a String to a Boolean</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="booleans/convert-null-to-a-boolean.html" data-task-id="convert-null-to-a-boolean"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Convert null to a Boolean</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="booleans/make-the-variable-truthy.html" data-task-id="make-the-variable-truthy"><div class="task-circle task-circle--challenge" title="Challenge">C</div><div class="task-info"><h3>Make the Variable Truthy</h3></div><span class="task-check">&check;</span></a>
+                <a class="task-item" href="booleans/test-javascript-booleans.html" data-task-id="test-javascript-booleans"><div class="task-circle task-circle--exam" title="Exam">E</div><div class="task-info"><h3>Test: JavaScript Booleans</h3></div><span class="task-check">&check;</span></a>
+            </div>
+        </main>
+    </div>
+    <script src="../../script/progress.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            jscRenderTaskCheckmarks('booleans');
+            jscRenderCategoryCounts();
+        });
+    </script>
+    <script src="../../script/nav.js"></script>
+</body>
+</html>

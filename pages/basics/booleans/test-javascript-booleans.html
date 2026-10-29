@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Test: JavaScript Booleans</title>
+    <link rel="stylesheet" href="../../../style/index.css">
+</head>
+<body data-category-id="booleans" data-task-id="test-javascript-booleans">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo"><span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span><span class="sidebar-logo-copy"><strong>CodeCraft</strong><span>WEB INTRO</span></span></div>
+            <ul class="sidebar-nav">
+                <li><a href="../booleans.html" class="sidebar-category">Booleans</a></li>
+                <li><a href="lesson.html" class="sidebar-task sidebar-task--lesson" data-task-id="booleans-introduction"><span class="sidebar-task-icon">L</span><span class="sidebar-task-label">Introduction to Booleans</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="assign-a-boolean-to-a-variable.html" class="sidebar-task sidebar-task--challenge" data-task-id="assign-a-boolean-to-a-variable"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Assign a Boolean to a Variable</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="convert-number-to-boolean.html" class="sidebar-task sidebar-task--challenge" data-task-id="convert-number-to-boolean"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Convert Number to Boolean</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="boolean-of-an-empty-string.html" class="sidebar-task sidebar-task--challenge" data-task-id="boolean-of-an-empty-string"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Boolean of an Empty String</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="convert-a-string-to-a-boolean.html" class="sidebar-task sidebar-task--challenge" data-task-id="convert-a-string-to-a-boolean"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Convert a String to a Boolean</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="convert-null-to-a-boolean.html" class="sidebar-task sidebar-task--challenge" data-task-id="convert-null-to-a-boolean"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Convert null to a Boolean</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="make-the-variable-truthy.html" class="sidebar-task sidebar-task--challenge" data-task-id="make-the-variable-truthy"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Make the Variable Truthy</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="test-javascript-booleans.html" class="sidebar-task sidebar-task--exam active" data-task-id="test-javascript-booleans"><span class="sidebar-task-icon">E</span><span class="sidebar-task-label">Test: JavaScript Booleans</span><span class="sidebar-task-check">&check;</span></a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Test: JavaScript Booleans</h1>
+            <section class="quiz-progress" aria-label="Quiz progress">
+                <div class="quiz-progress-header"><span>Progress</span><span id="quiz-progress-count">0 of 6 answered</span></div>
+                <div id="quiz-progress-bar" class="quiz-progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><span id="quiz-progress-fill" class="quiz-progress-fill"></span></div>
+            </section>
+            <form id="quiz-form" class="quiz-question">
+                <p id="quiz-question-number" class="quiz-question-number"></p>
+                <h2 id="quiz-question-prompt"></h2>
+                <pre class="quiz-code"><code id="quiz-question-code"></code></pre>
+                <fieldset class="quiz-answer-options"><legend>Choose an answer</legend><div id="quiz-answer-choices"></div></fieldset>
+                <button id="quiz-submit" class="quiz-submit" type="submit">Submit answer</button>
+                <p id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </main>
+        <script src="../../../script/progress.js"></script>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof jscRenderTaskCheckmarks === 'function') {
+                jscRenderTaskCheckmarks('booleans');
+            }
+
+            const quizForm = document.getElementById('quiz-form');
+            const progressBar = document.getElementById('quiz-progress-bar');
+            const progressFill = document.getElementById('quiz-progress-fill');
+            const progressCount = document.getElementById('quiz-progress-count');
+            const feedback = document.getElementById('quiz-feedback');
+            const questionNumber = document.getElementById('quiz-question-number');
+            const questionPrompt = document.getElementById('quiz-question-prompt');
+            const questionCode = document.getElementById('quiz-question-code');
+            const answerChoices = document.getElementById('quiz-answer-choices');
+            const submitButton = document.getElementById('quiz-submit');
+            const questions = [
+                {
+                    prompt: 'What will be the output?',
+                    code: 'const isReady = true;\nconsole.log(isReady);',
+                    choices: [
+                        { label: 'true', value: 'true' },
+                        { label: 'false', value: 'false' },
+                        { label: 'undefined', value: 'undefined' },
+                    ],
+                    answer: 'true',
+                },
+                {
+                    prompt: 'What is the Boolean value of 0?',
+                    code: 'console.log(Boolean(0));',
+                    choices: [
+                        { label: 'true', value: 'true' },
+                        { label: 'false', value: 'false' },
+                    ],
+                    answer: 'false',
+                },
+                {
+                    prompt: 'What is the Boolean value of an empty string?',
+                    code: "console.log(Boolean(''));",
+                    choices: [
+                        { label: 'true', value: 'true' },
+                        { label: 'false', value: 'false' },
+                    ],
+                    answer: 'false',
+                },
+                {
+                    prompt: 'What is the Boolean value of a non-empty string?',
+                    code: "console.log(Boolean('CodeCraft'));",
+                    choices: [
+                        { label: 'true', value: 'true' },
+                        { label: 'false', value: 'false' },
+                    ],
+                    answer: 'true',
+                },
+                {
+                    prompt: 'What is the Boolean value of null?',
+                    code: 'console.log(Boolean(null));',
+                    choices: [
+                        { label: 'true', value: 'true' },
+                        { label: 'false', value: 'false' },
+                    ],
+                    answer: 'false',
+                },
+                {
+                    prompt: 'What will be the output?',
+                    code: 'let value = 0;\nvalue = 1;\nconsole.log(Boolean(value));',
+                    choices: [
+                        { label: 'true', value: 'true' },
+                        { label: 'false', value: 'false' },
+                    ],
+                    answer: 'true',
+                },
+            ];
+            let currentQuestionIndex = 0;
+            let awaitingNextQuestion = false;
+
+            function renderQuestion() {
+                const question = questions[currentQuestionIndex];
+                questionNumber.textContent = 'Question ' + (currentQuestionIndex + 1) + ' of ' + questions.length;
+                questionPrompt.textContent = question.prompt;
+                questionCode.textContent = question.code;
+                answerChoices.replaceChildren();
+
+                question.choices.forEach(function (choice) {
+                    const label = document.createElement('label');
+                    const input = document.createElement('input');
+                    const answerText = document.createElement('span');
+                    label.className = 'quiz-answer-choice';
+                    input.type = 'radio';
+                    input.name = 'answer';
+                    input.value = choice.value;
+                    answerText.textContent = choice.label;
+                    label.append(input, answerText);
+                    answerChoices.append(label);
+                });
+            }
+
+            quizForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                if (awaitingNextQuestion) {
+                    currentQuestionIndex += 1;
+                    awaitingNextQuestion = false;
+                    submitButton.textContent = 'Submit answer';
+                    feedback.textContent = '';
+                    feedback.className = 'quiz-feedback';
+                    renderQuestion();
+                    return;
+                }
+
+                const selectedAnswer = quizForm.querySelector('input[name="answer"]:checked');
+                if (!selectedAnswer) {
+                    feedback.textContent = 'Choose an answer before submitting.';
+                    feedback.className = 'quiz-feedback quiz-feedback--error';
+                    return;
+                }
+
+                const question = questions[currentQuestionIndex];
+                if (selectedAnswer.value !== question.answer) {
+                    feedback.textContent = 'Not quite. Review the question and try again.';
+                    feedback.className = 'quiz-feedback quiz-feedback--error';
+                    return;
+                }
+
+                const answeredCount = currentQuestionIndex + 1;
+                const progressPercent = (answeredCount / questions.length) * 100;
+                progressBar.setAttribute('aria-valuenow', String(answeredCount));
+                progressFill.style.width = progressPercent + '%';
+                progressCount.textContent = answeredCount + ' of ' + questions.length + ' answered';
+                feedback.textContent = 'Correct.';
+                feedback.className = 'quiz-feedback quiz-feedback--success';
+
+                if (currentQuestionIndex < questions.length - 1) {
+                    awaitingNextQuestion = true;
+                    submitButton.textContent = 'Next question';
+                } else {
+                    feedback.textContent = 'Correct. Test complete.';
+                    submitButton.disabled = true;
+                    if (typeof jscMarkCompleted === 'function') {
+                        jscMarkCompleted('booleans', 'test-javascript-booleans');
+                        jscRenderTaskCheckmarks('booleans');
+                    }
+                }
+            });
+
+            renderQuestion();
+        });
+    </script>
+</body>
+</html>

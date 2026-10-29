@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Test: JavaScript variables</title>
+    <link rel="stylesheet" href="../../../style/index.css">
+</head>
+<body data-category-id="variables" data-task-id="test-javascript-variables">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+            <span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span class="sidebar-logo-copy">
+                <strong>CodeCraft</strong>
+                <span>WEB INTRO</span>
+            </span>
+        </div>
+            <ul class="sidebar-nav">
+                <li><a href="../variables.html" class="sidebar-category">Variables</a></li>
+                <li><a href="lesson.html" class="sidebar-task sidebar-task--lesson" data-task-id="variables-introduction"><span class="sidebar-task-icon">L</span><span class="sidebar-task-label">Introduction to Variables</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="hello-world.html" class="sidebar-task sidebar-task--challenge" data-task-id="hello-world"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Hello world</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="reassign-value-to-a-variable-1.html" class="sidebar-task sidebar-task--challenge" data-task-id="reassign-value-to-a-variable-1"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Reassign a value to a variable I</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="assign-value-to-a-variable.html" class="sidebar-task sidebar-task--challenge" data-task-id="assign-value-to-a-variable"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Assign a value to a variable</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="assign-value-of-another-variable.html" class="sidebar-task sidebar-task--challenge" data-task-id="assign-value-of-another-variable"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Assign the value of another variable</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="create-a-variable.html" class="sidebar-task sidebar-task--challenge" data-task-id="create-a-variable"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Create a missing variable</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="accessing-a-variable-1.html" class="sidebar-task sidebar-task--challenge" data-task-id="accessing-a-variable-1"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Accessing a variable I</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="accessing-a-variable-2.html" class="sidebar-task sidebar-task--challenge" data-task-id="accessing-a-variable-2"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Accessing a variable II</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="declare-variable-and-assign-a-number.html" class="sidebar-task sidebar-task--challenge" data-task-id="declare-variable-and-assign-a-number"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Declare a variable and assign a number</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="reassign-value-to-a-variable-2.html" class="sidebar-task sidebar-task--challenge" data-task-id="reassign-value-to-a-variable-2"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Reassign a value to a variable II</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="uncomment-to-assign-a-number.html" class="sidebar-task sidebar-task--challenge" data-task-id="uncomment-to-assign-a-number"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Uncomment to Assign a Number</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="time-to-uncomment.html" class="sidebar-task sidebar-task--challenge" data-task-id="time-to-uncomment"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Time to Uncomment</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="time-to-comment.html" class="sidebar-task sidebar-task--challenge" data-task-id="time-to-comment"><span class="sidebar-task-icon">C</span><span class="sidebar-task-label">Time to comment</span><span class="sidebar-task-check">&check;</span></a></li>
+                <li><a href="test-javascript-variables.html" class="sidebar-task sidebar-task--exam active" data-task-id="test-javascript-variables"><span class="sidebar-task-icon">E</span><span class="sidebar-task-label">Test: JavaScript variables</span><span class="sidebar-task-check">&check;</span></a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Test: JavaScript variables</h1>
+            <section class="quiz-progress" aria-label="Quiz progress">
+                <div class="quiz-progress-header">
+                    <span>Progress</span>
+                    <span id="quiz-progress-count">0 of 4 answered</span>
+                </div>
+                <div id="quiz-progress-bar" class="quiz-progress-track" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0">
+                    <span id="quiz-progress-fill" class="quiz-progress-fill"></span>
+                </div>
+            </section>
+            <form id="quiz-form" class="quiz-question">
+                <p id="quiz-question-number" class="quiz-question-number"></p>
+                <h2 id="quiz-question-prompt"></h2>
+                <pre class="quiz-code"><code id="quiz-question-code"></code></pre>
+                <fieldset class="quiz-answer-options">
+                    <legend>Choose an answer</legend>
+                    <div id="quiz-answer-choices"></div>
+                </fieldset>
+                <button id="quiz-submit" class="quiz-submit" type="submit">Submit answer</button>
+                <p id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </main>
+        <script src="../../../script/progress.js"></script>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof jscRenderTaskCheckmarks === 'function') {
+                jscRenderTaskCheckmarks('variables');
+            }
+
+            const quizForm = document.getElementById('quiz-form');
+            const progressBar = document.getElementById('quiz-progress-bar');
+            const progressFill = document.getElementById('quiz-progress-fill');
+            const progressCount = document.getElementById('quiz-progress-count');
+            const feedback = document.getElementById('quiz-feedback');
+            const questionNumber = document.getElementById('quiz-question-number');
+            const questionPrompt = document.getElementById('quiz-question-prompt');
+            const questionCode = document.getElementById('quiz-question-code');
+            const answerChoices = document.getElementById('quiz-answer-choices');
+            const submitButton = document.getElementById('quiz-submit');
+            const questions = [
+                {
+                    prompt: 'What will be the output?',
+                    code: 'let num = 5;\n// num = 0;\nconsole.log(num);',
+                    choices: [
+                        { label: '5', value: '5' },
+                        { label: '0', value: '0' },
+                        { label: 'undefined', value: 'undefined' },
+                    ],
+                    answer: '5',
+                },
+                {
+                    prompt: 'What will be the output?',
+                    code: 'const num = 2;\nnum = 6;\nconsole.log(num);',
+                    choices: [
+                        { label: '2', value: '2' },
+                        { label: '6', value: '6' },
+                        { label: 'TypeError: Assignment to constant variable', value: 'type-error' },
+                    ],
+                    answer: 'type-error',
+                },
+                {
+                    prompt: 'What will be the output?',
+                    code: 'let num = 2;\nnum = 6;\nconsole.log(num);',
+                    choices: [
+                        { label: '6', value: '6' },
+                        { label: '2', value: '2' },
+                        { label: 'TypeError: Assignment to constant variable', value: 'type-error' },
+                    ],
+                    answer: '6',
+                },
+                {
+                    prompt: 'What will be the output?',
+                    code: 'let num;\nconsole.log(num);',
+                    choices: [
+                        { label: 'undefined', value: 'undefined' },
+                        { label: 'TypeError: Assignment to constant variable', value: 'type-error' },
+                    ],
+                    answer: 'undefined',
+                },
+            ];
+            let currentQuestionIndex = 0;
+            let awaitingNextQuestion = false;
+
+            function renderQuestion() {
+                const question = questions[currentQuestionIndex];
+                questionNumber.textContent = 'Question ' + (currentQuestionIndex + 1) + ' of ' + questions.length;
+                questionPrompt.textContent = question.prompt;
+                questionCode.textContent = question.code;
+                answerChoices.replaceChildren();
+
+                question.choices.forEach(function (choice) {
+                    const label = document.createElement('label');
+                    const input = document.createElement('input');
+                    const answerText = document.createElement('span');
+                    label.className = 'quiz-answer-choice';
+                    input.type = 'radio';
+                    input.name = 'answer';
+                    input.value = choice.value;
+                    answerText.textContent = choice.label;
+                    label.append(input, answerText);
+                    answerChoices.append(label);
+                });
+            }
+
+            quizForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                if (awaitingNextQuestion) {
+                    currentQuestionIndex += 1;
+                    awaitingNextQuestion = false;
+                    submitButton.textContent = 'Submit answer';
+                    feedback.textContent = '';
+                    feedback.className = 'quiz-feedback';
+                    renderQuestion();
+                    return;
+                }
+
+                const selectedAnswer = quizForm.querySelector('input[name="answer"]:checked');
+                if (!selectedAnswer) {
+                    feedback.textContent = 'Choose an answer before submitting.';
+                    feedback.className = 'quiz-feedback quiz-feedback--error';
+                    return;
+                }
+
+                const question = questions[currentQuestionIndex];
+                if (selectedAnswer.value !== question.answer) {
+                    feedback.textContent = 'Not quite. Review the code and try again.';
+                    feedback.className = 'quiz-feedback quiz-feedback--error';
+                    return;
+                }
+
+                const answeredCount = currentQuestionIndex + 1;
+                const progressPercent = (answeredCount / questions.length) * 100;
+                progressBar.setAttribute('aria-valuenow', String(answeredCount));
+                progressFill.style.width = progressPercent + '%';
+                progressCount.textContent = answeredCount + ' of ' + questions.length + ' answered';
+                feedback.textContent = 'Correct.';
+                feedback.className = 'quiz-feedback quiz-feedback--success';
+
+                if (currentQuestionIndex < questions.length - 1) {
+                    awaitingNextQuestion = true;
+                    submitButton.textContent = 'Next question';
+                } else {
+                    feedback.textContent = 'Correct. Test complete.';
+                    submitButton.disabled = true;
+                    if (typeof jscMarkCompleted === 'function') {
+                        jscMarkCompleted('variables', 'test-javascript-variables');
+                        jscRenderTaskCheckmarks('variables');
+                    }
+                }
+            });
+
+            renderQuestion();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - JS Practice</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+            <span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span class="sidebar-logo-copy">
+                <strong>CodeCraft</strong>
+                <span>WEB INTRO</span>
+            </span>
+        </div>
+            <ul class="sidebar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="sidebar-group">
+                    <a href="js-basics.html" class="sidebar-group-toggle" aria-expanded="false" onclick="jscToggleSidebarGroup(this, event)">JS Basics</a>
+                    <ul class="sidebar-subnav" hidden>
+                    <li><a href="basics/variables.html" onclick="jscGuardSamePageLink(this, event)"><span>Variables</span><span class="sidebar-count" data-category="variables" data-category-total="14">0/14</span></a></li>
+                    <li><a href="basics/booleans.html" onclick="jscGuardSamePageLink(this, event)"><span>Booleans</span><span class="sidebar-count" data-category="booleans" data-category-total="8">0/8</span></a></li>
+                    <li><a href="basics/operators.html" onclick="jscGuardSamePageLink(this, event)"><span>Operators</span><span class="sidebar-count" data-category="operators" data-category-total="18">0/18</span></a></li>
+                    <li><a href="basics/strings.html" onclick="jscGuardSamePageLink(this, event)"><span>Strings</span><span class="sidebar-count" data-category="strings" data-category-total="27">0/27</span></a></li>
+                    <li><a href="basics/conditionals.html" onclick="jscGuardSamePageLink(this, event)"><span>Conditionals</span><span class="sidebar-count" data-category="conditionals" data-category-total="0">0/0</span></a></li>
+                    <li><a href="basics/functions-i.html" onclick="jscGuardSamePageLink(this, event)"><span>Functions I</span><span class="sidebar-count" data-category="functions-i" data-category-total="0">0/0</span></a></li>
+                    <li><a href="basics/arrays.html" onclick="jscGuardSamePageLink(this, event)"><span>Arrays</span><span class="sidebar-count" data-category="arrays" data-category-total="0">0/0</span></a></li>
+                    <li><a href="basics/objects.html" onclick="jscGuardSamePageLink(this, event)"><span>Objects</span><span class="sidebar-count" data-category="objects" data-category-total="0">0/0</span></a></li>
+                    <li><a href="basics/loops.html" onclick="jscGuardSamePageLink(this, event)"><span>Loops</span><span class="sidebar-count" data-category="loops" data-category-total="0">0/0</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="js-intermediate.html">JS Intermediate</a></li>
+                <li><a href="js-dom.html">JS DOM</a></li>
+                <li><a href="js-practice.html">JS Practice</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>JS Practice</h1>
+        </main>
+    </div>
+    <script src="../script/progress.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            jscRenderCategoryCounts();
+        });
+    </script>
+    <script src="../script/nav.js"></script>
+</body>
+</html>

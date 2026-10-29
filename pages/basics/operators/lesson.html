@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Introduction to Operators</title>
+    <link rel="stylesheet" href="../../../style/index.css">
+</head>
+<body data-category-id="operators" data-task-id="operators-introduction">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo"><span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span><span class="sidebar-logo-copy"><strong>CodeCraft</strong><span>WEB INTRO</span></span></div>
+            <ul id="operator-task-nav" class="sidebar-nav"><li><a href="../operators.html" class="sidebar-category">Operators</a></li></ul>
+        </nav>
+        <main class="content">
+            <h1>Introduction to Operators</h1>
+            <p>Operators let you compare values, combine conditions, and perform calculations. In this category, you will build expressions and inspect their results.</p>
+            <h2>Compare and combine</h2>
+            <pre class="quiz-code"><code>const isOlder = 18 >= 18;
+const canEnter = isOlder && true;
+console.log(canEnter);</code></pre>
+            <p>Comparisons produce Boolean values. Logical expressions combine those values to make a larger condition.</p>
+            <h2>Calculate values</h2>
+            <pre class="quiz-code"><code>const total = 5 + 3;
+const remainder = 10 % 3;
+console.log(total);
+console.log(remainder);</code></pre>
+            <button id="complete-lesson" class="run-button" type="button">Mark lesson complete</button>
+            <p id="lesson-status" class="quiz-feedback" role="status" aria-live="polite"></p>
+        </main>
+        <script src="../../../script/progress.js"></script>
+        <script src="../../../script/operators.js"></script>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.getElementById('complete-lesson');
+            const status = document.getElementById('lesson-status');
+            const taskId = 'operators-introduction';
+
+            jscInitOperatorLesson();
+            if (jscIsCompleted('operators', taskId)) {
+                button.textContent = 'Lesson completed';
+                button.disabled = true;
+            }
+
+            button.addEventListener('click', function () {
+                jscMarkCompleted('operators', taskId);
+                jscRenderTaskCheckmarks('operators');
+                button.textContent = 'Lesson completed';
+                button.disabled = true;
+                status.textContent = 'Lesson marked complete.';
+                status.className = 'quiz-feedback quiz-feedback--success';
+            });
+        });
+    </script>
+</body>
+</html>

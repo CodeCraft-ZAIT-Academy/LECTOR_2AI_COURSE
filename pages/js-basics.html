@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - JS Basics</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-logo">
+            <span class="sidebar-logo-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span class="sidebar-logo-copy">
+                <strong>CodeCraft</strong>
+                <span>WEB INTRO</span>
+            </span>
+        </div>
+            <ul class="sidebar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="sidebar-group is-expanded">
+                    <a href="js-basics.html" class="sidebar-group-toggle" aria-expanded="true" onclick="jscToggleSidebarGroup(this, event)">JS Basics</a>
+                    <ul class="sidebar-subnav">
+                    <li><a href="basics/variables.html" onclick="jscGuardSamePageLink(this, event)"><span>Variables</span><span class="sidebar-count" data-category="variables" data-category-total="14">0/14</span></a></li>
+                    <li><a href="basics/booleans.html" onclick="jscGuardSamePageLink(this, event)"><span>Booleans</span><span class="sidebar-count" data-category="booleans" data-category-total="8">0/8</span></a></li>
+                    <li><a href="basics/operators.html" onclick="jscGuardSamePageLink(this, event)"><span>Operators</span><span class="sidebar-count" data-category="operators" data-category-total="18">0/18</span></a></li>
+                    <li><a href="basics/strings.html" onclick="jscGuardSamePageLink(this, event)"><span>Strings</span><span class="sidebar-count" data-category="strings" data-category-total="27">0/27</span></a></li>
+                    <li><a href="basics/conditionals.html" onclick="jscGuardSamePageLink(this, event)"><span>Conditionals</span><span class="sidebar-count" data-category="conditionals" data-category-total="0">0/0</span></a></li>
+                    <li><a href="basics/functions-i.html" onclick="jscGuardSamePageLink(this, event)"><span>Functions I</span><span class="sidebar-count" data-category="functions-i" data-category-total="0">0/0</span></a></li>
+                    <li><a href="basics/arrays.html" onclick="jscGuardSamePageLink(this, event)"><span>Arrays</span><span class="sidebar-count" data-category="arrays" data-category-total="0">0/0</span></a></li>
+                    <li><a href="basics/objects.html" onclick="jscGuardSamePageLink(this, event)"><span>Objects</span><span class="sidebar-count" data-category="objects" data-category-total="0">0/0</span></a></li>
+                    <li><a href="basics/loops.html" onclick="jscGuardSamePageLink(this, event)"><span>Loops</span><span class="sidebar-count" data-category="loops" data-category-total="0">0/0</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="js-intermediate.html">JS Intermediate</a></li>
+                <li><a href="js-dom.html">JS DOM</a></li>
+                <li><a href="js-practice.html">JS Practice</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>JS Basics</h1>
+            <div class="roadmap">
+                <a class="roadmap-item" href="basics/variables.html">
+                    <div class="roadmap-circle" data-category="variables" data-category-total="14"><span class="roadmap-circle-value">0/14</span></div>
+                    <div class="roadmap-info">
+                        <h3>Variables</h3>
+                        <p>Learn how to declare and work with var, let, and const.</p>
+                    </div>
+                </a>
+                <a class="roadmap-item" href="basics/booleans.html">
+                    <div class="roadmap-circle" data-category="booleans" data-category-total="8"><span class="roadmap-circle-value">0/8</span></div>
+                    <div class="roadmap-info">
+                        <h3>Booleans</h3>
+                        <p>Understand true/false values and boolean logic.</p>
+                    </div>
+                </a>
+                <a class="roadmap-item" href="basics/operators.html">
+                    <div class="roadmap-circle" data-category="operators" data-category-total="18"><span class="roadmap-circle-value">0/18</span></div>
+                    <div class="roadmap-info">
+                        <h3>Operators</h3>
+                        <p>Explore arithmetic, comparison, and logical operators.</p>
+                    </div>
+                </a>
+                <a class="roadmap-item" href="basics/strings.html">
+                    <div class="roadmap-circle" data-category="strings" data-category-total="27"><span class="roadmap-circle-value">0/27</span></div>
+                    <div class="roadmap-info">
+                        <h3>Strings</h3>
+                        <p>Practice creating, combining, and manipulating text.</p>
+                    </div>
+                </a>
+                <a class="roadmap-item" href="basics/conditionals.html">
+                    <div class="roadmap-circle" data-category="conditionals" data-category-total="0"><span class="roadmap-circle-value">0/0</span></div>
+                    <div class="roadmap-info">
+                        <h3>Conditionals</h3>
+                        <p>Control program flow with if, else, and switch statements.</p>
+                    </div>
+                </a>
+                <a class="roadmap-item" href="basics/functions-i.html">
+                    <div class="roadmap-circle" data-category="functions-i" data-category-total="0"><span class="roadmap-circle-value">0/0</span></div>
+                    <div class="roadmap-info">
+                        <h3>Functions I</h3>
+                        <p>Write reusable blocks of code with functions.</p>
+                    </div>
+                </a>
+                <a class="roadmap-item" href="basics/arrays.html">
+                    <div class="roadmap-circle" data-category="arrays" data-category-total="0"><span class="roadmap-circle-value">0/0</span></div>
+                    <div class="roadmap-info">
+                        <h3>Arrays</h3>
+                        <p>Store and manipulate ordered collections of data.</p>
+                    </div>
+                </a>
+                <a class="roadmap-item" href="basics/objects.html">
+                    <div class="roadmap-circle" data-category="objects" data-category-total="0"><span class="roadmap-circle-value">0/0</span></div>
+                    <div class="roadmap-info">
+                        <h3>Objects</h3>
+                        <p>Work with key-value pairs to model real-world data.</p>
+                    </div>
+                </a>
+                <a class="roadmap-item" href="basics/loops.html">
+                    <div class="roadmap-circle" data-category="loops" data-category-total="0"><span class="roadmap-circle-value">0/0</span></div>
+                    <div class="roadmap-info">
+                        <h3>Loops</h3>
+                        <p>Repeat actions with for, while, and other loop structures.</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </div>
+    <script src="../script/progress.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            jscRenderCategoryCounts();
+        });
+    </script>
+    <script src="../script/nav.js"></script>
+</body>
+</html>
